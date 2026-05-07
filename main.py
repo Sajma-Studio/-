@@ -7,7 +7,7 @@ from aiogram.types import ChatPermissions, ReplyKeyboardMarkup, KeyboardButton
 from database import Database
 
 # --- КОНФІГУРАЦІЯ ---
-TOKEN = "ТВІЙ_ТОКЕН"
+TOKEN = "8694438105:AAE66_9D1ZYLfwMn5AEEKWc3bPyYeUF5zTU"
 MY_ID = 7518373450 
 
 bot = Bot(token=TOKEN)
