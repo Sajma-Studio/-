@@ -62,7 +62,7 @@ async def global_monitor(message: types.Message):
     if not admin_status:
         # 1. Анти-Посилання (URL, t.me, @username)
         if db.get_setting(cid, "anti_link"):
-            link_pattern = r"(http://|https://|t\.me/|@\w+)"
+            link_pattern = r"(http://|https://|t\.me/)"
             if re.search(link_pattern, message.text.lower()):
                 await message.delete()
                 return await message.answer(f"🚫 {message.from_user.first_name}, посилання заборонені!")
